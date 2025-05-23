@@ -565,6 +565,16 @@ a:hover {
   color: #ddd;
 }
 
+.link2 {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #810000;
+}
+
 .making-title {
   text-align: center;
   font-size: 48px;
