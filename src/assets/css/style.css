@@ -462,7 +462,7 @@ html {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .btn-back {
@@ -562,7 +562,7 @@ html {
 }
 
 a:hover {
-  color: #b00710;
+  color: #ddd;
 }
 
 .making-title {
