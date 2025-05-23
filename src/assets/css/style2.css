@@ -1,0 +1,95 @@
+/* Cabeçalho da página */
+.page-header {
+  text-align: center;
+  margin: 50px 0 30px;
+  color: white;
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
+/* Grid principal da página de jogos */
+.games-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* espaço entre cards */
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  background-color: #121212; /* para testar fundo escuro */
+}
+
+/* Card individual do jogo */
+.game-card {
+  display: flex;
+  background-color: #222; /* fundo escuro */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Imagem do jogo */
+.game-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Informações do jogo */
+.game-info {
+  padding: 20px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Título do jogo */
+.game-info h2 {
+  margin: 0 0 15px;
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
+/* Descrição do jogo */
+.game-info p {
+  margin: 0 0 25px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Botão comprar */
+.btn-buy {
+  width: 140px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* botão alinhado à esquerda */
+}
+
+.btn-buy:hover {
+  background-color: #800000;
+  transform: translateY(-4px);
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: #b30000; /* vermelho destaque */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 1px;
+}

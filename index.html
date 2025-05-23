@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Nexus Studios</title>
+  <link rel="stylesheet" href="src/assets/css/style.css">
+  <link rel="icon" type="image/png" href="src/assets/img/favicon.png">
+</head>
+
+<body>
+
+  <!-- Tela de capa -->
+  <section class="hero" id="hero">
+    <img src="src/assets/img/capa_teste.png" alt="Capa do Jogo">
+    <a href="https://www.youtube.com/watch?v=xxOGxZqXUsc" target="_blank" class="trailer-button">
+      Watch the Trailer
+    </a>
+  </section>
+
+  <!-- Conteúdo do site real -->
+  <div class="site-header">
+    <img src="src/assets/img/Logo_pixel.png" alt="Logo da Empresa" class="logo">
+    <h1 class="site-title">
+      <span class="dream">DREAM</span> <span class="nexus">NEXUS STUDIOS</span>
+    </h1>
+    <div class="grid">
+      <h2 class="titulo2"></h2>
+
+    </div>
+  </div>
+
+  <!-- grid de items JOGOS -->
+  <section class="grid-container">
+    <div class="grid-item">
+      <img src="src/assets/img/controle.png" alt="Controle minimalista" class="icon">
+      <div class="hover-info">
+        <h3>GAMES</h3>
+        <p>Discover all our games.</p>
+        <a href="src/games.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- grid de items SOBRE NÓS -->
+    <div class="grid-item">
+      <img src="src/assets/img/sobre.png" alt="Controle minimalista" class="icon">
+      <div class="hover-info">
+        <h3>ABOUT US</h3>
+        <p>Get to know who we are and our team.</p>
+        <a href="src/aboutus.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- grid de items CONTATO -->
+    <div class="grid-item">
+      <img src="src/assets/img/contato.png" alt="Controle minimalista" class="icon">
+      <div class="hover-info">
+        <h3>CONTACT</h3>
+        <p>Get in touch with us</p>
+        <a href="src/contact.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- grid de items -->
+    <div class="grid-item">
+      <img src="src/assets/img/making.png" alt="Controle minimalista" class="icon">
+      <div class="hover-info">
+        <h3>MAKING OFF</h3>
+        <p>See more of our game development</p>
+        <a href="src/makingoff.html" class="btn">See more</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Script de transição -->
+  <script>
+    const hero = document.getElementById('hero');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight * 0.2) {
+        hero.classList.add('fade-out');
+      } else {
+        hero.classList.remove('fade-out');
+      }
+    });
+  </script>
+  <footer class="site-footer">
+    <p>Dream Nexus Studios - All rights reserved ®</p>
+  </footer>
+</body>
+
+</html>
