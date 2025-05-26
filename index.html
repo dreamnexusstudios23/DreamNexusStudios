@@ -89,6 +89,24 @@
   <footer class="site-footer">
     <p>Dream Nexus Studios - All rights reserved ®</p>
   </footer>
+
+  <script>
+    // Só ativa no mobile (telas pequenas)
+    if (window.innerWidth <= 768) {
+      const gridItems = document.querySelectorAll('.grid-item');
+
+      gridItems.forEach(item => {
+        item.addEventListener('click', () => {
+          // Fecha outros cards
+          gridItems.forEach(i => i.classList.remove('active'));
+
+          // Abre este card
+          item.classList.add('active');
+        });
+      });
+    }
+  </script>
+
 </body>
 
 </html>

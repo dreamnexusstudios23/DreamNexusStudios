@@ -609,3 +609,13 @@ a:hover {
   text-align: center;
   grid-column: 1 / -1;
 }
+
+@media (max-width: 768px) {
+  .hover-info {
+    display: none; /* escondido por padrão */
+  }
+
+  .grid-item.active .hover-info {
+    display: block; /* aparece quando clicado */
+  }
+}
