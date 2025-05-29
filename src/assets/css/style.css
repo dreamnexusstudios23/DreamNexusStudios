@@ -327,6 +327,12 @@ html {
   padding: 20px 20px 40px 20px;
 }
 
+@media (max-width: 600px) {
+  .games-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .game-item {
   display: flex;
   background-color: #1e1e1e;
@@ -337,8 +343,9 @@ html {
 
 .game-image {
   flex-shrink: 0;
-  width: 400px;
-  height: 280px;
+  /* width: 400px;
+  height: 280px; */
+  max-width: 55%;
   object-fit: cover;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
