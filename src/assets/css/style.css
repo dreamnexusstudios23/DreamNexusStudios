@@ -728,9 +728,16 @@ a:hover {
 
   .menu {
     width: 100%;
-    right: 0;
+    right: 10px;
     border-radius: 0;
     box-shadow: none;
+    padding: 25px;
+    
+  }
+
+  .menu a {
+    position: relative;
+    left: -10px;
   }
 
   .hover-info {
@@ -744,5 +751,11 @@ a:hover {
     background: #b30000;
     padding: 10px;
     border-radius: 0 0 12px 12px;
+  }
+
+  .contact-item {
+    position: relative;
+    bottom: -4rem;
+    gap: 10px;
   }
 }
